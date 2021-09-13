@@ -1,0 +1,12 @@
+.menu-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15%;
+    margin: 1% 1% 0 0;
+    z-index: 15;
+}
+
+.icon {
+    width: 100%;
+}
