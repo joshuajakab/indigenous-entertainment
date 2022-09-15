@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FBIcon from '../../media/facebook.svg';
 import InstaIcon from '../../media/instagram.svg';
 import './footer.css';

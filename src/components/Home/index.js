@@ -4,6 +4,7 @@ import { fetchShowsStart } from '../../redux/Shows/shows.actions';
 import Trees from '../../media/tree-divider.svg';
 import Mtn from '../../media/mtn-divider.svg';
 import Show from '../Shows/show';
+import Button from '../defaultComponents/Button';
 import { useWindowWidthAndHeight } from '../../hooks/index';
 import './styles.css';
 import { Link } from 'react-router-dom';
@@ -63,7 +64,7 @@ const Home = props => {
                             <Show key={pos} {...configShow} />
                         )
                     })}
-                    <Link to='/shows' className='more-gigs'><h1 className='more-gigs-title'>More Gigs</h1></Link>
+                    <Link to='/shows'><Button><h1 className='more-gigs-title'>More Gigs</h1></Button></Link>
                 </div>
             </div>
         </div>

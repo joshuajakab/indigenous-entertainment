@@ -4,11 +4,12 @@
 }
 
 .btn {
-    background-color: #B7872D;
-    width: 100%;
+    background-color: white;
+    width: 40%;
     height: 10%;
+    margin: 3% 30% 0;
     border: none;
-    border-radius: 5%/20%;
+    border-radius: 10%/25%;
     display: flex;
     justify-content: space-around;
     align-items: center;
