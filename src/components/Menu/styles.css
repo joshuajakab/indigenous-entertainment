@@ -1,13 +1,18 @@
 .menu-container {
     position: fixed;
-    top: 0;
-    background-color: white;
+    bottom: 0;
+    background-color: black;
     width: 100%;
-    height: 100%;
-    z-index: 12;
+    height: 91%;
+    margin-top: 9%;
+    z-index: 15;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
+}
+
+.menu-link {
+    color: white;
 }

@@ -1,0 +1,16 @@
+.btn-container {
+    width: 100%;
+    margin-top: 1%;
+}
+
+.btn {
+    background-color: #B7872D;
+    width: 100%;
+    height: 10%;
+    border: none;
+    border-radius: 5%/20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}

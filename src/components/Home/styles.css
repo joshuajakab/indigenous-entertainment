@@ -1,9 +1,265 @@
+@media screen and (max-width: 600px) {
+    .home-container {
+        min-height: 100%;
+    }
+    
+    .home-image {
+    
+        max-width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+    
+    .news-container {
+        height: 100%;
+        padding-top: 100%;
+    }
+    
+    .divider {
+        position: relative;
+        z-index: 8;
+    }
+    
+    .news-title {
+        position: relative;
+        z-index: 8;
+        background-color: #006838;
+        height: 25%;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .news-title-text {
+        color: white;
+    }
+    
+    .post-container {
+        width: 100%;
+        height: auto;
+        background-color: #006838;
+        position: relative;
+        z-index: 8;
+        margin-top: -5%;
+        padding-bottom: 30%;
+        
+    }
+    
+    .post-content {
+        padding: 5%;
+        text-align: center;
+    }
+    
+    .mtn-divider {
+        margin-top: -50%;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .gig-title {
+        text-align: center;
+        margin: -5% 0 10%;
+        color: white;
+    }
+    
+    .gig-container {
+        position: relative;
+        z-index: 10;
+        background-color: black;
+        padding-bottom: 20%;
+    }
+    
+    .more-gigs {
+        cursor: pointer;
+        text-align: center;
+    
+    }
+    
+    .more-gigs-title {
+        color: #0dff00;
+    }
+    
+    }
+
+@media screen and (min-width: 601px) {
+    .home-container {
+        height: 100%;
+    }
+    
+    .home-image {
+    
+        max-width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+    
+    .news-container {
+        height: 100%;
+        padding-top: 100%;
+    }
+    
+    .divider {
+        position: relative;
+        z-index: 8;
+    }
+    
+    .news-title {
+        position: relative;
+        z-index: 8;
+        background-color: #006838;
+        height: 25%;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .news-title-text {
+        color: white;
+        font-size: 3rem;
+    }
+    
+    .post-container {
+        width: 100%;
+        height: auto;
+        background-color: #006838;
+        position: relative;
+        z-index: 8;
+        margin-top: -5%;
+        padding-bottom: 30%;
+        
+    }
+    
+    .post-content {
+        padding: 5%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .mtn-divider {
+        margin-top: -50%;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .gig-title {
+        text-align: center;
+        margin: -5% 0 10%;
+        color: white;
+        font-size: 3rem;
+    }
+    
+    .gig-container {
+        position: relative;
+        z-index: 10;
+        background-color: black;
+        padding-bottom: 20%;
+    }
+    
+    .more-gigs {
+        cursor: pointer;
+        text-align: center;
+    
+    }
+    
+    .more-gigs-title {
+        color: #0dff00;
+    }
+    
+    }
+
+
+@media screen and (min-width: 925px) {
 .home-container {
-    margin-top: 20%;
+    height: 100%;
 }
 
 .home-image {
 
     max-width: 100%;
     height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.wide-home-img {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.news-container {
+    height: 100%;
+    padding-top: 100%;
+}
+
+.divider {
+    position: relative;
+    z-index: 8;
+}
+
+.news-title {
+    position: relative;
+    z-index: 8;
+    background-color: #006838;
+    height: 25%;
+    margin-top: -20%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-title-text {
+    color: white;
+}
+
+.post-container {
+    width: 100%;
+    height: auto;
+    background-color: #006838;
+    position: relative;
+    z-index: 8;
+    margin-top: -5%;
+    padding-bottom: 25%;
+    
+}
+
+.post-content {
+    padding: 5%;
+    text-align: center;
+}
+
+.mtn-divider {
+    margin-top: -50%;
+    position: relative;
+    z-index: 10;
+}
+
+.gig-title {
+    text-align: center;
+    margin: -20% 0 10%;
+    color: white;
+}
+
+.gig-container {
+    
+    position: relative;
+    z-index: 10;
+    background-color: black;
+    padding-bottom: 20%;
+}
+
+.more-gigs {
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.more-gigs-title {
+    color: #0dff00;
+}
+
 }

@@ -1,0 +1,13 @@
+.formRow {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5% auto;
+}
+
+.formInput {
+    width: 50%;
+    height: 100%;
+}

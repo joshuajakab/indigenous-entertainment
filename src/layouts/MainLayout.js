@@ -22,15 +22,15 @@ const MainLayout = props => {
                 <Header />
                 :
                 <div className='phone-header-container'>
-                <PhoneHeader /> 
-                <MenuIcon click={menuToggle}/> 
+                <PhoneHeader/> 
+                <MenuIcon click={menuToggle}/>
                 </div>
                 
             }
             
             <div className='main'>
                 {menuOpen && [
-                    <Menu />
+                    <Menu click={menuToggle}/>
                 ]}
                 {props.children}
             </div>
