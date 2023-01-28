@@ -1,0 +1,47 @@
+@media screen and (max-width: 600px) {
+    .admin-container {
+        min-height: 100%;
+
+    }
+
+    .add-show-container {
+        min-height: 100%;
+    }
+    
+    .show-form {
+        margin-top: 20%;
+        margin-bottom: 25%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .show-title {
+        color: white;
+        text-align: center;
+    }
+    
+    .delete-show {
+        width: 90%;
+        margin: 0 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .delete-show-text {
+        width: 40%;
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    .delete-button-container {
+        width: 100%;
+    }
+
+    .delete-text {
+        color: black;
+    }
+
+   
+}

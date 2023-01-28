@@ -30,7 +30,7 @@ export const handleFetchShows = pageSize => {
                     ...snapshot.docs.map(doc => {
                         return {
                             ...doc.data(),
-                            showID: doc.id
+                            documentID: doc.id
                         }
                     })
                 ];
@@ -47,11 +47,11 @@ export const handleFetchShows = pageSize => {
     })
 };
 
-export const handleDeleteShow = showID => {
+export const handleDeleteShow = documentID => {
     return new Promise((resolve, reject) => {
         firestore
             .collection('shows')
-            .doc(showID)
+            .doc(documentID)
             .delete()
             .then(() => {
                 resolve();

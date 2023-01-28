@@ -12,14 +12,14 @@ const Show = (show) => {
         location,
         time,
         description,
-        showID
+        documentID
     } = show;
 
     const infoToggle = () => {
         setMoreInfo(moreInfo => !moreInfo)
       }
 
-    if (!showID) return null;
+    if (!documentID) return null;
 
     return (
         <div className='shows-container'>

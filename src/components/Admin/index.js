@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchShowsStart, addShowStart, deleteShowStart } from '../../redux/Shows/shows.actions';
 import Button from '../defaultComponents/Button';
 import Input from '../defaultComponents/Input';
+import Show from '../Shows/show';
+import './admin.css';
 
 
 
@@ -12,6 +14,7 @@ const mapState = ({ showsData }) => ({
 
 const Admin = props => {
     const { shows } = useSelector(mapState);
+    const { data } = shows;
     const dispatch = useDispatch();
     const [date, setDate] = useState('');
     const [venue, setVenue] = useState('');
@@ -41,7 +44,7 @@ const Admin = props => {
                 date,
                 venue,
                 location,
-                time, 
+                time,
                 description
             })
         );
@@ -52,7 +55,7 @@ const Admin = props => {
         <div className='admin-container'>
             <div className='add-show-container'>
                 <form onSubmit={handleSubmit} className='show-form'>
-                    <h1>Add a Show</h1>
+                    <h1 className='show-title'>Add a Show</h1>
                     <Input
                         label='Date'
                         type='text'
@@ -84,10 +87,39 @@ const Admin = props => {
                         handleChange={e => setDescription(e.target.value)}
                     />
                     <Button type='submit'>
-                        Add Show
+                        <h1>Add Show</h1>
                     </Button>
                 </form>
             </div>
+            <h1 className='show-title'>Manage Shows</h1>
+            {(Array.isArray(data) && data.length > 0) && data.map((show, index) => {
+                const {
+                    date,
+                    venue,
+                    documentID
+                } = show;
+
+                return (
+
+                    <div key={index} className='delete-show'>
+                        
+                        <div className='delete-show-text'>
+                            <p>{date}</p>
+                        </div>
+                        <div className='delete-show-text'>
+                            <p>{venue}</p>
+                        </div>
+                        <div className='delete-button-container'>
+                        <Button onClick={() => dispatch(deleteShowStart(documentID))}>
+                            <h2 className='delete-text'>Delete</h2>
+                        </Button>
+                        </div>
+
+                    </div>
+
+                )
+            })}
+
 
         </div>
     )

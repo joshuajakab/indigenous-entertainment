@@ -35,7 +35,7 @@ const Shows = ({ }) => {
     return (
         <div className='calendar-container'>
             <div className='carousel-container'>
-                <Carousel dynamicHeight='true'>
+                <Carousel dynamicHeight='true' autoPlay={true} interval={7500} showArrows={false} showThumbs={false} showStatus={false}>
                     <div className='gig-img-container'>
                         <img src='https://drive.google.com/uc?id=1cEdSTq_KRkdPjbrAbEUg0eVAg4BHLCqw' alt='gig-1' />
                     </div>

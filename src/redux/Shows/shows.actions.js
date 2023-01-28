@@ -15,7 +15,7 @@ export const setShows = shows => ({
     payload: shows
 });
 
-export const deleteShowStart = showID => ({
+export const deleteShowStart = documentID => ({
     type: showsTypes.DELETE_SHOW_START,
-    payload: showID
+    payload: documentID
 });

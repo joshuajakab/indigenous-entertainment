@@ -16,3 +16,24 @@
 .menu-link {
     color: white;
 }
+
+.menu-link-2 {
+    color: #0dff00;
+}
+
+.sub-menu-link {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 15%;
+
+}
